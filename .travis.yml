@@ -1,0 +1,16 @@
+language: bash
+matrix:
+  include:
+    - os: linux
+      dist: xenial
+dist: xenial
+sudo: required
+cache:
+  - pip
+before_install:
+  - sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 6B05F25D762E3157
+  - sudo apt-get update
+  - sudo pip install codacy-coverage coverage
+script:
+  - ./install_ros.sh kinetic desktop-full
+  - ./install_ros2.sh ardent
