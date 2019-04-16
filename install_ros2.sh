@@ -7,7 +7,7 @@ set -e
 INSTALL_OPTIONAL=1
 USE_ROS1_PKGS=1  # additional packages for examples
 INSTALL_BASHRC_LINE=1
-INSTALL_ADDITIONAL_TOOLS=1  # for colcon etc.
+INSTALL_EXTA_TOOLS=1  # for colcon etc.
 
 function print_sec {
     printf "\n===============================================\n"
@@ -97,10 +97,13 @@ then
     fi
 fi
 
-if [[ $INSTALL_ADDITIONAL_TOOLS == "1" ]]
+if [[ $INSTALL_EXTA_TOOLS == "1" ]]
 then
     print_sec "Installing additional tools"
-    sudo apt install python3-colcon-common-extensions
+    sudo apt install \
+        python3-colcon-common-extensions \
+        ros-${ROS_DISTRO}-rqt-* \
+        ros-${ROS_DISTRO}-tf2-sensor-msgs
 fi
 
 

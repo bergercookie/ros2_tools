@@ -12,5 +12,5 @@ before_install:
   - sudo apt-get update
   - sudo pip install codacy-coverage coverage
 script:
-  - ./install_ros.sh kinetic desktop-full
+  - ./install_ros.sh kinetic desktop
   - ./install_ros2.sh ardent
