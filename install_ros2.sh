@@ -103,12 +103,12 @@ then
     sudo apt install \
         python3-colcon-common-extensions \
         ros-${ROS_DISTRO}-tf2-* \
-        ros-${ROS_DISTRO}-image-transport
 
     if [[ "${ROS_DISTRO}" != "ardent" ]]
     then
     sudo apt install \
-        ros-${ROS_DISTRO}-rqt-*
+        ros-${ROS_DISTRO}-rqt-* \
+        ros-${ROS_DISTRO}-image-transport
     fi
 fi
 
