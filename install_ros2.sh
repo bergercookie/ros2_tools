@@ -103,7 +103,8 @@ then
     sudo apt install \
         python3-colcon-common-extensions \
         ros-${ROS_DISTRO}-rqt-* \
-        ros-${ROS_DISTRO}-tf2-sensor-msgs
+        ros-${ROS_DISTRO}-tf2-sensor-msgs \
+        ros-${ROS_DISTRO}-image-transport
 fi
 
 
