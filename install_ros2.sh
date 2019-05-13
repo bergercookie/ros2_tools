@@ -108,8 +108,8 @@ then
     then
     sudo apt install \
         ros-${ROS_DISTRO}-rqt-* \
-        ros-${ROS_DISTRO}-image-transport
-    fi
+        ros-${ROS_DISTRO}-image-transport \
+        ros-${ROS_DISTRO}-rviz2*
 fi
 
 
