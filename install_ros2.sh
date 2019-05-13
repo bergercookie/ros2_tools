@@ -102,7 +102,7 @@ then
     print_sec "Installing additional tools"
     sudo apt install \
         python3-colcon-common-extensions \
-        ros-${ROS_DISTRO}-tf2-* \
+        ros-${ROS_DISTRO}-tf2-*
 
     if [[ "${ROS_DISTRO}" != "ardent" ]]
     then
@@ -111,6 +111,5 @@ then
         ros-${ROS_DISTRO}-image-transport \
         ros-${ROS_DISTRO}-rviz2*
 fi
-
 
 print_sec "All done."
