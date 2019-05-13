@@ -110,6 +110,7 @@ then
         ros-${ROS_DISTRO}-rqt-* \
         ros-${ROS_DISTRO}-image-transport \
         ros-${ROS_DISTRO}-rviz2*
+    fi
 fi
 
 print_sec "All done."
