@@ -4,9 +4,9 @@
 set -e
 
 # flags
-INSTALL_OPTIONAL=1
-USE_ROS1_PKGS=1  # additional packages for examples
-INSTALL_BASHRC_LINE=1
+INSTALL_OPTIONAL=0
+USE_ROS1_PKGS=0  # additional packages for examples
+INSTALL_BASHRC_LINE=0
 INSTALL_EXTA_TOOLS=1  # for colcon etc.
 
 function print_sec {
