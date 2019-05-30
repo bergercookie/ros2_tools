@@ -7,10 +7,15 @@ dist: xenial
 sudo: required
 cache:
   - pip
+env:
+  - ROS_DISTRO=ardent
+    ROS_DISTRO_VARIANT=desktop
+    USE_ROS1_PKGS=1
+    INSTALL_EXTA_TOOLS=1
 before_install:
   - sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 6B05F25D762E3157
   - sudo apt-get update
   - sudo pip install codacy-coverage coverage
 script:
   - ./install_ros.sh kinetic desktop
-  - ./install_ros2.sh ardent
+  - ./install_ros2.sh
